@@ -3,23 +3,24 @@
 const assignment = {};
 // ========================
 //challenge-1
-function sumOfNumbers(){
-   let arrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-   let sumOfNumbers = 0;
+function sumOfNumbers(arrayOfNumbers){
+   let sum = 0;
       for(i=0; i<arrayOfNumbers.length; i++){
-        sumOfNumbers += arrayOfNumbers[i]
+        sum += arrayOfNumbers[i]
       }
-   return sumOfNumbers
+   return sum
  }
 assignment.sumOfNumbers = sumOfNumbers
 //challenge-2
-function countEvenNumbers(){
-  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  const countEvenNumbers = arr.filter(number => {
-  return number % 2 === 0;
-});
-  return countEvenNumbers.length
+function countEvenNumbers(arrayOfNumbers){
+  let count = 0
+  for(i=0; i<arrayOfNumbers.length; i++){
+    if(arrayOfNumbers[i] % 2 === 0){
+      count++
+    }
   }
+  return count;
+}
 assignment.countEvenNumbers = countEvenNumbers;
 /**
  * Challenge - 3
